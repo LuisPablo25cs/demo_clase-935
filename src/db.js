@@ -12,7 +12,7 @@ export const query = (text, params) => {
 const initializeDatabase = async () => {
     try {
         await query(`
-        CREATE TABLE IF NOT EXIST posts (
+        CREATE TABLE IF NOT EXISTS posts (
             id SERIAL PRIMARY KEY, 
             content TEXT NOT NULL, 
             created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
