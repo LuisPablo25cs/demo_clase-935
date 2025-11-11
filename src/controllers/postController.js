@@ -10,7 +10,7 @@ try {
         RETURNING id, content, created_at;
         `;
     const result = await query(instertPostQuery, [content]);
-    res.json(Result.rows[0]);
+    res.json(result.rows[0]);
 } catch (error) {
     res.status(400).json({error: error.mesage})
 }};
