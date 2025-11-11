@@ -1,4 +1,3 @@
-import { text } from 'express';
 import pkg from 'pg'; 
 const { Pool } = pkg
 
