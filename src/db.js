@@ -13,11 +13,11 @@ const initializeDatabase = async () => {
     try {
         await query(`
         CREATE TABLE IF NOT EXISTS posts (
-            id SERIAL PRIMARY KEY, 
-            content TEXT NOT NULL, 
-            created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+            id SERIAL PRIMARY KEY,
+            content TEXT NOT NULL,
+            created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
             updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
-            );
+        );
             `);
         console.log("Database created :D")
     } catch (err) {
