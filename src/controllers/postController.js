@@ -15,7 +15,7 @@ try {
     res.status(400).json({error: error.mesage})
 }};
 
-export const getAllPost = async(req, res) => {
+export const getAllPosts = async(req, res) => {
     try {
         const getPostsQuery =`
             SELECT id, content, created_at
