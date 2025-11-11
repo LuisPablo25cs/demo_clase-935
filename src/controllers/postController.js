@@ -13,7 +13,7 @@ try {
     res.json(Result.rows[0]);
 } catch (error) {
     res.status(400).json({error: error.mesage})
-}}
+}};
 
 export const getAllPost = async(req, res) => {
     try {
@@ -27,4 +27,4 @@ export const getAllPost = async(req, res) => {
     } catch (err) {
         res.status(400).json
     }
-}
+};

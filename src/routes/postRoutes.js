@@ -7,6 +7,6 @@ import {
 const router = express.Router();
 
 router.post('/', createPost); 
-router.get('/'. getAllPost);
+router.get('/', getAllPost);
 
 export default router; 
