@@ -34,7 +34,7 @@ export const deletePost = async (req, res) => {
     const {id} = req.params; 
 
     try {
-        const deltePost = `
+        const deletePost = `
             DELETE FROM posts
             WHERE id = $1
             RETURNING id, content, created_at; 
